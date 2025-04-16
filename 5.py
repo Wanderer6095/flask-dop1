@@ -14,6 +14,11 @@ def astronaut_selection():
             html = file.read()
         html = html.replace("{style}", url_style)
         return html
+    elif request.method == 'POST':
+        for key, value in request.form.items():
+            print(key, "-", value)
+        print(request.form.get('photo', ""))
+        return "Форма отправлена"
 
 
 if __name__ == '__main__':

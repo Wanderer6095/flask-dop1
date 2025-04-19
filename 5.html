@@ -15,16 +15,16 @@
     </div>
 
     <div class="container d-flex justify-content-center mt-4">
-        <form method="post" enctype="multipart/form-data" class="p-3 border rounded bg-light-orange text-center">
-            <div class="mb-3">
-                <label for="photo" class="form-label">Приложите фотографию</label>
-                <input class="form-control" type="file" id="photo" name="file">
-            </div>
+        <form method="post" enctype="multipart/form-data">
+            <div class="form-group">
+                 <label for="photo">Выберите файл</label>
+                 <input type="file" class="form-control-file" id="photo" name="file">
+             </div>
             <div class="mb-3">
                 <img src="/static/img/MARS-6.png" alt="preview" class="img-fluid" style="max-height: 300px;">
-            </div>
-            <button type="submit" class="btn btn-primary">Отправить</button>
-        </form>
+                </div>
+             <button type="submit" class="btn btn-primary">Отправить</button>
+         </form>
     </div>
 </body>
 
